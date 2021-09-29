@@ -38,7 +38,7 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& msg)
   range_array[1] = 999;
   range_array[2] = 999; //reset the obstacle distances to 999
 
-  for(int i = 15; i < 75; i++) //find the cloest obstacle on right
+  for(int i = 45; i < 75; i++) //find the cloest obstacle on right
   {
     if (msg->ranges[i] < range_array[2]) range_array[2] = msg->ranges[i];
     else continue;
@@ -50,7 +50,7 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& msg)
     else continue;
   }
 
-  for(int i = 195; i < 255; i++) //find the cloest obstacle on left
+  for(int i = 195; i < 225; i++) //find the cloest obstacle on left
   {
     if (msg->ranges[i] < range_array[0]) range_array[0] = msg->ranges[i];
     else continue;
