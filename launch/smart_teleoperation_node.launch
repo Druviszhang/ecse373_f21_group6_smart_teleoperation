@@ -1,0 +1,4 @@
+<launch>
+  <arg name="robot_name" default="robot0" />
+  <node name="smart_teleoperation_node" type="smart_teleoperation_code" pkg="smart_teleoperation" args="__ns:=$(arg robot_name)"/>
+</launch>

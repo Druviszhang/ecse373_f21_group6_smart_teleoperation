@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find stdr_launchers)/launch/server_with_map_and_gui.launch" />
+  <include file="$(find smart_teleoperation)/launch/smart_teleoperation_node.launch" />
+  <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" />
+</launch>
