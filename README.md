@@ -1,7 +1,8 @@
 # ecse373_f21_group6_smart_teleoperation Instructions
 ###### ECSE 373 Lab 3 for group 6
 
-In order to start up with single robot type this command:
+In this lab, we make a simulator for a simple two-dimensional robot (STDR). 
+We start up the single robot type with this command:
 
 ```
 roslaunch smart_teleoperation launch_file.launch robot_name:=robot0
