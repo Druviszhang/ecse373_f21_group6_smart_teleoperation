@@ -99,7 +99,7 @@ void smart_teleoperation(double lidar_l, double lidar_f, double lidar_r)
         break;
         
       case STATUS_B: // front warn, left and right ok, compare left and right value to turn
-        if(lidar_l > lidar_r)  publishTwistCmd(0, default_yaw_rate);
+        if(lidar_l > lidar_r)  publishTwistCmd(0, 5 * default_yaw_rate);  //rate it by 5, in case of the robot stuck
         else  publishTwistCmd(0, -default_yaw_rate);
         break;
       
