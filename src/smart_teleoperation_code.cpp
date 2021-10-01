@@ -2,7 +2,6 @@
 #include "std_msgs/String.h"
 #include <sensor_msgs/LaserScan.h>
 #include <geometry_msgs/Twist.h>
-#include <stdio.h>
 
 #include <sstream>
 
@@ -29,7 +28,7 @@ double default_linear_x = 0.5;  // (m/s)
 double default_yaw_rate = 0.5;  // rad/s
 
 double range_array[3]; //save three obstacle distances
-double des_cmd_array[2]; //save the linear_x and angular_z from des_cmd
+double des_cmd_array[2]; //save the linear_x and angular_z from des_vel
 
 
 void laser_callback(const sensor_msgs::LaserScan::ConstPtr& msg)
